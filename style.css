@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header with gradient mix of blue & red */
+header {
+  text-align: center;
+  background: linear-gradient(135deg, #0052cc, #d32f2f);
+  color: white;
+  padding: 20px 0;
+}
+
+.header-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Navigation with a softer gradient */
+nav {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #d32f2f, #0052cc);
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Main section */
+.section {
+  padding: 20px;
+}
+
+/* Image grid styling */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.content-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+form input, form textarea, form button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Form button in gradient */
+form button {
+  background: linear-gradient(90deg, #0052cc, #d32f2f);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #d32f2f, #0052cc);
+}
